@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parks</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./data/scripts/nationalParkData.js"></script>
+    <script src="./data/scripts/parkTypeData.js"></script>
+    <script src="./data/scripts/locationData.js"></script>
+    <script src="./scripts/parks_page.js"></script>
+</head> 
+<body>
+    <nav>
+        <a href="index.html">HOME</a><a  href="./mountains.html">MOUNTAINS</a><a href="./park.html" class="selected">PARKS</a>
+    </nav>
+    <main>
+
+        <video autoplay muted loop id="background-video">
+            <source src="./extra_fotos/188595-883402169_small.mp4" type="video/mp4">
+            <!-- Fallback message for browsers that don't support the <video> tag -->
+            Your browser does not support the video tag.
+        </video>
+
+        <h1>Parks</h1>
+        <div class="filters">
+            <select name="parkTypeSelect" id="parkTypeSelect">
+                <option value="">Select a Park Type...</option>
+            </select>
+            <select name="parkLocatoinSelect" id="parkLocatoinSelect">
+                <option value="">Select a Park Location</option>
+            </select>
+            <button id="filterButton">Filter</button>
+        </div>
+        <div id="results"></div>
+        <button onclick="clearresults()">Clear Results</button>
+    </main>
+    <footer>
+        Copy Right &copy;
+    </footer>
+</body>
+</html>
