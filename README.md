@@ -18,7 +18,7 @@
           
                                                ******** Mountains Page ********
 
-    Welcome to my mountains page! 
+    Welcome to my mountains page! In this page you can find a different variety of mountains. You can explore 48 different mountains to look into with details provided in each drop down of each unique mountain.
 
 <>
                   <div class="carousel-item">
@@ -27,7 +27,7 @@
                               
                                                     ******** Parks Page ********
 
-    Welcome to my parks page!
+    Welcome to my parks page! In this page you can filter and search any park at any location if it is availble in that location. Each location is different and with this filtered search it will help you find the best park that is just right for you!
 
 
 <>
