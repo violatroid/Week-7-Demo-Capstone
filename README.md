@@ -6,7 +6,7 @@
 
 <>
                   <div class="carousel-item">
-                <img src="./extra_fotos/hiking people.jpg" class="d-block w-100" alt="...">
+                <img src="./read_me/1 homepage.png" class="d-block w-100" alt="...">
               </div>
 
 
