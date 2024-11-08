@@ -7,16 +7,16 @@ function addLocation(text, target) {
 function Park(parkObject){
     const e = document.createElement("pre");
     e.innerHTML = `
-        LocationID: "${parkObject.LocationID}",
+        LocationID:   "${parkObject.LocationID}",
         LocationName: "${parkObject.LocationName}",
-        Address: "${parkObject.Address}",
-        City: "${parkObject.City}",
-        State: "${parkObject.State}",
-        ZipCode: ${parkObject.ZipCode},
-        Phone: "${parkObject.Phone}",
-        Fax: "${parkObject.Fax}",
-        Latitude: ${parkObject.Latitude},
-        Longitude: ${parkObject.Longitude},
+        Address:      "${parkObject.Address}",
+        City:         "${parkObject.City}",
+        State:        "${parkObject.State}",
+        ZipCode:       ${parkObject.ZipCode},
+        Phone:        "${parkObject.Phone}",
+        Fax:          "${parkObject.Fax}",
+        Latitude:      ${parkObject.Latitude},
+        Longitude:     ${parkObject.Longitude},
     `;
     return e;
 }
