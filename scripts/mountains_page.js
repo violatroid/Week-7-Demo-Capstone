@@ -1,7 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const mountainsSelect = document.getElementById("mountainsSelect");
+  document.addEventListener("DOMContentLoaded", () => {
+    async function getSunsetForMountain(lat, lng) {
+        let response = await fetch(
+          `https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lng}&date=today`
+        );
+        let data = await response.json();
+        return data;
+      }
+    // Select");
     mountainsArray.forEach(m => mountainsSelect.appendChild(new Option(m.name)));
-    mountainsSelect.addEventListener("change", e => {
+    mountainsSelect.addEventListener("change", async e => {
         const selectedIndex = mountainsSelect.selectedIndex;
         if(selectedIndex){ //not help which 0 therefore falsey
             const m = mountainsArray[selectedIndex - 1];
@@ -25,6 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 i.src = "data/images/" + m.img;
                 results.appendChild(i);
             }
+            let data=await getSunsetForMountain (m.coords.lat, m.coords.lng)
+            results.innerHTML += data.results.sunrise
+            results.innerHTML += " - "
+            results.innerHTML += data.results.sunset 
         }
     });//end change
 });//end load
